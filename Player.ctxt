@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Player()
+comment1.params=
+comment1.target=void\ act()
+comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ Player\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+comment2.params=
+comment2.target=void\ attack()
+comment2.text=\r\n\ Checks\ current\ turn\ in\ the\ world,\ if\ it\ is\ the\ player's\ turn\ to\ attack\ then\ \r\n\ attack\ by\ creating\ a\ new\ Attack\ object\r\n
+comment3.params=
+comment3.target=void\ bounce()
+comment4.params=damage
+comment4.target=void\ lowerHealth(int)
+comment5.params=
+comment5.target=int\ getHealth()
+numComments=6

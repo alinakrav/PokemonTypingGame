@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Stages()
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Stages.\r\n\ \r\n
+comment1.params=
+comment1.target=void\ act()
+comment2.params=
+comment2.target=int\ getTurn()
+comment3.params=
+comment3.target=void\ nextTurn()
+comment4.params=turn
+comment4.target=void\ nextTurn(int)
+comment5.params=
+comment5.target=void\ prepare()
+comment5.text=\r\n\ \ \ \ public\ void\ changeTurn(){\r\n\ \ \ \ if\ (turn\ \=\=\ 0)\r\n\ \ \ \ {\r\n\ \ \ \ addObject(zero,\ 10,\ 10\ );\ //\ add\ the\ turn\ zero\ object\ to\ the\ stage,\ the\ position\ does\ not\ matter\r\n\r\n\ \ \ \ //\ SomethingObject0.turnZeroEnds()\ gives\ me\ a\ boolean\ created\ in\ the\ SomethingObject0\ class\ \r\n\ \ \ \ //\ if\ the\ boolean\ \=\ true,\ it\ means\ that\ the\ class\ has\ done\ all\ its\ work\ and\ the\ turn\ ends\r\n\ \ \ \ if\ (SomethingObject0.turnZeroEnds()\ \=\=\ true)\ \r\n\ \ \ \ {\r\n\ \ \ \ removeObject(zero);\ //\ removes\ the\ object\ \r\n\ \ \ \ turn\ \=\ 1;\ //\ this\ turn\ ends\ and\ will\ go\ to\ the\ next\ turn\ in\ the\ next\ act\r\n\ \ \ \ }\r\n\ \ \ \ }\r\n\ \ \ \ else\ if\ (turn\ \=\=\ 1)\r\n\ \ \ \ {\r\n\ \ \ \ addObject(one,\ 10,\ 10\ );\ \r\n\ \ \ \ if\ (SomethingObject1.turnOneEnds()\ \=\=\ true)\ \r\n\ \ \ \ {\r\n\ \ \ \ removeObject(one);\ //\ removes\ the\ object\ \r\n\ \ \ \ turn\ \=\ 2;\ //\ this\ turn\ ends\ and\ will\ go\ to\ the\ next\ turn\ in\ the\ next\ act\r\n\ \ \ \ }\r\n\ \ \ \ }\r\n\ \ \ \ else\ if\ (turn\ \=\=\ 2)\r\n\ \ \ \ {\r\n\ \ \ \ addObject(two,\ 10,\ 10\ );\ \r\n\ \ \ \ if\ (SomethingObject2.turnTwoEnds()\ \=\=\ true)\ \r\n\ \ \ \ {\r\n\ \ \ \ removeObject(two);\ //\ removes\ the\ object\ \r\n\ \ \ \ turn\ \=\ 3;\ //\ this\ turn\ ends\ and\ will\ go\ to\ the\ next\ turn\ in\ the\ next\ act\r\n\ \ \ \ }\r\n\ \ \ \ }\r\n\ \ \ \ else\ if\ (turn\ \=\=\ 3)\r\n\ \ \ \ {\r\n\ \ \ \ addObject(three,\ 10,\ 10\ );\ \r\n\ \ \ \ if\ (SomethingObject3.turnThreeEnds()\ \=\=\ true)\ \r\n\ \ \ \ {\r\n\ \ \ \ removeObject(three);\ //\ removes\ the\ object\ \r\n\ \ \ \ turn\ \=\ 0;\ //\ goes\ back\ to\ turn\ zero\r\n\ \ \ \ }\r\n\ \ \ \ }\r\n\ \ \ \ //else\ {}\ not\ sure\ how\ the\ game\ ends,\ should\ be\ something\ related\ to\ the\ health\ bar\r\n\ \ \ \ }\r\n\r\n\ \ \ \ /**\r\n\ Prepare\ the\ world\ for\ the\ start\ of\ the\ program.\ That\ is\:\ create\ the\ initial\r\n\ objects\ and\ add\ them\ to\ the\ world.\r\n
+comment6.params=
+comment6.target=void\ updateHealth()
+numComments=7

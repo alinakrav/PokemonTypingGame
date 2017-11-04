@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ act()
+comment1.params=
+comment1.target=java.lang.String\ readKeys()
+comment2.params=str
+comment2.target=void\ changeTxt(java.lang.String)
+comment3.params=input
+comment3.target=void\ clearInput(Wordbox)
+comment4.params=str
+comment4.target=void\ removeIfCorrect(java.lang.String)
+numComments=5

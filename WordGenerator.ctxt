@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=WordGenerator()
+comment1.params=filename
+comment1.target=java.util.Scanner\ getScanner(java.lang.String)
+comment2.params=fileName\ list
+comment2.target=void\ addWord(java.lang.String,\ java.util.ArrayList)
+comment3.params=
+comment3.target=java.lang.String\ getRandomString()
+numComments=4
