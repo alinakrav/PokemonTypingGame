@@ -5,15 +5,17 @@ import java.io.InputStream;
 import java.awt.Color;
 
 /**
- * This class is going to scan words from the word files and output the strings to DisplayWord class
- * This class uses an arraylist
+ * This class is used to scan words from provided word files and put them in an ArrayList.
+ * A random word is then picked from the list using a method that can be called from other classes.
  * 
- * @Kathy Zhuang
+ * @author Alex, Kathy, Alina 
+ * @version November 9th, 2017
  */
 public class WordGenerator extends Actor
 {
-    static ArrayList<String> wordList = new ArrayList<String>();
-    
+    static ArrayList<String> wordList = new ArrayList<String>(); // list of words
+
+    // constructor parses through the following text files and adds all the words into arrayList
     public WordGenerator() {
         addWord("verbs.txt", wordList);
         addWord("adjectives.txt", wordList);
@@ -30,22 +32,22 @@ public class WordGenerator extends Actor
         return null;
     } 
 
-    // this method creates a new scanner, read the words in the word files and add them to the arraylist
+    // this method creates a new scanner, reads the words in a word file and adds them to an arraylist
     public void addWord(String fileName, ArrayList<String> list)
     {
-        Scanner myScanner = getScanner(fileName);
-        while (myScanner.hasNext())
+        Scanner myScanner = getScanner(fileName); // create scanner of certain text file
+        while (myScanner.hasNext()) // while more words to scan left
         {
-            String nextWord = myScanner.next();
-            list.add(nextWord);
+            String nextWord = myScanner.next(); // word parsed from text file
+            list.add(nextWord); // add word to given arrayList
         }
     } 
 
     // this method gets a random word from the arraylist using getRandomNumber() method
     public static String getRandomString()
     {
-        int index = Greenfoot.getRandomNumber(wordList.size());
-        String r = (String)wordList.get(index);
-        return r;
+        int index = Greenfoot.getRandomNumber(wordList.size()); // get random number that falls withitn the range of the list's indices
+        String r = (String)wordList.get(index); // get string from list that's under that index
+        return r; // return random string
     }
 }

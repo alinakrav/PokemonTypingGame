@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=Character
+comment0.text=\n\ This\ class\ builds\ an\ object\ that\:\n\ bounces\ (idle\ position),\n\ can\ shoot\ modifiable\ projectile\ attacks,\n\ has\ a\ health\ count,\n\ creates\ a\ name\ tag\ specific\ to\ the\ character\ name\ and\ health,\n\ can\ be\ hit\ by\ projectiles,\n\ has\ health\ that\ can\ be\ lowered\ from\ outside\ classes,\n\ can\ die\ when\ health\ is\ depleted.\n\ \n\ The\ subclasses\ SubEnemy\ and\ SubPlayer\ have\ more\ specific\ functionality\ \n\ (specifically,\ attacks),\ and\ those\ can\ create\ characters\ with\ player\ or\ \n\ enemy\ traits.\n\ \n\ @author\ Alex,\ Kathy,\ Alina\ \n\ @version\ November\ 9th,\ 2017\n
+comment1.params=name\ health\ damage\ width\ height\ tagX\ tagY\ bounceX\ bounceY
+comment1.target=Character(java.lang.String,\ int,\ int,\ int,\ int,\ int,\ int,\ int,\ int)
+comment2.params=
+comment2.target=void\ act()
+comment3.params=
+comment3.target=void\ die()
+comment4.params=
+comment4.target=int\ getHealth()
+comment5.params=damageReceived
+comment5.target=void\ lowerHealth(int)
+comment6.params=
+comment6.target=void\ bounce()
+comment7.params=
+comment7.target=void\ attack()
+numComments=8

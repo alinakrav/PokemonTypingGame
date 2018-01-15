@@ -1,35 +1,34 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 import java.awt.Color;
+
 /**
- * Write a description of class XP here.
+ * This class is used to create the "HP: __" portion of the character name tag, which 
+ * displays their health numerically. It updates as the health variable changes.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Alex, Kathy, Alina 
+ * @version November 9th, 2017
  */
 public class HealthCounter extends Actor
 {
-    int health;
-    
+    int health; // health of hp counter object
+
+    // constructor sets this object's health to a given health
     public HealthCounter(int health){
-        this.health = health;
-    }
-    /**
-     * Act - do whatever the XP wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
+        this.health = health; // set health 
+    } 
+
     public void act() 
-    {
-        
-        update();
-        
+    { 
+        updateHealthCounter(); // update hp counter to current health
     }
-    public void update(){
-        setImage(new GreenfootImage("HP: "+health, 12, Color.WHITE, Color.BLACK)); //draws the word out
+
+    // this method sets the healthCounter image to that of the current health
+    public void updateHealthCounter(){
+        setImage(new GreenfootImage("HP: "+ health, 12, Color.WHITE, Color.ORANGE)); //draws the text out and sets it as image
     }
-    public void lowerHealth(int health){
-        this.health-=health;
-    }
+
+    // this method sets the current health of the health counter object to a given integer
     public void setHealth(int health){
-        this.health=health;
+        this.health = health;
     }
 }

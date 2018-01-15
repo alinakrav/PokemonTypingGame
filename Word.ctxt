@@ -1,12 +1,16 @@
 #BlueJ class context
-comment0.params=text\ co
-comment0.target=Word(java.lang.String,\ java.awt.Color)
-comment1.params=
-comment1.target=void\ act()
+comment0.target=Word
+comment0.text=\n\ This\ class\ makes\ a\ word\ object\ with\ a\ given\ string\ and\ colour,\ \n\ and\ then\ moves\ it\ across\ the\ screen.\ It\ gets\ deleted\n\ from\ the\ world\ when\ it\ reaches\ the\ edge.\n\ \n\ @author\ Alex,\ Kathy,\ Alina\ \n\ @version\ November\ 9th,\ 2017\n
+comment1.params=text\ co
+comment1.target=Word(java.lang.String,\ java.awt.Color)
 comment2.params=
-comment2.target=void\ moveWord()
+comment2.target=void\ act()
 comment3.params=
-comment3.target=int\ getWordLength()
-comment4.params=
-comment4.target=java.lang.String\ getString()
-numComments=5
+comment3.target=void\ moveWord()
+comment4.params=pixels
+comment4.target=void\ setSpeed(int)
+comment5.params=
+comment5.target=int\ getWordLength()
+comment6.params=
+comment6.target=java.lang.String\ getString()
+numComments=7

@@ -1,9 +1,8 @@
 #BlueJ class context
-comment0.params=
-comment0.target=attackOne()
-comment1.params=
-comment1.target=void\ act()
-comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ attackOne\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+comment0.target=AttackOne
+comment0.text=\n\ This\ subclass\ creates\ an\ object\ with\ the\ functionality\ of\ the\ Attack\ class,\ that\n\ has\ a\ unique\ speed\ and\ set\ of\ frames\ to\ animate\ through.\ It\ is\ a\ moving\n\ projectile\ that\ can\ hit\ characters\ with\ a\ given\ amount\ of\ damage.\n\ \n\ @author\ Alex,\ Kathy,\ Alina\ \n\ @version\ November\ 9th,\ 2017\n
+comment1.params=canHit\ attacker\ damage\ targetX\ targetY
+comment1.target=AttackOne(boolean,\ Character,\ int,\ int,\ int)
 comment2.params=
-comment2.target=void\ animate()
+comment2.target=void\ act()
 numComments=3

@@ -1,18 +1,23 @@
 #BlueJ class context
-comment0.params=
-comment0.target=Stages()
-comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Stages.\r\n\ \r\n
-comment1.params=
-comment1.target=void\ act()
+comment0.target=Stages
+comment0.text=\n\ For\ the\ turns,\ 0\ is\ the\ turn\ for\ the\ player\ to\ type\ a\ word\n\ 1\ is\ when\ the\ attack\ happens\n\ 2\ is\ the\ turn\ when\ the\ enemy\ is\ going\ to\ attack\ and\ the\ user\ must\ type\ a\ random\ word\ to\ avoid\ it\n\ 3\ is\ the\ turn\ when\ the\ enemy\ attack\ happens\ and\ the\ user\ gets\ hit\ or\ not\n\ \n\ add\ the\ objects\ in\ each\ turn\ (change\ the\ names\ after\ the\ classes\ are\ done)\n\ \n\ turn\ zero\:\ WordObjects\ -->\ display\ words\ +\ get\ user\ input\n\ turn\ one\:\ attack\ -->\ player\ +\ attack\ \n\ turn\ two\:\ enemy\ attack\ -->\ enemy\ +\ attack\n\ turn\ three\:\ user\ gets\ hit\ or\ not\ -->\ idk\ the\ object\ yet\ \!\!\!\!\!\n\n\ @author\ Alex,\ Kathy,\ Alina\ \n\ @version\ November\ 9th,\ 2017\n
+comment1.params=initWordSpeed
+comment1.target=Stages(int)
 comment2.params=
-comment2.target=int\ getTurn()
+comment2.target=void\ act()
 comment3.params=
-comment3.target=void\ nextTurn()
-comment4.params=turn
-comment4.target=void\ nextTurn(int)
-comment5.params=
-comment5.target=void\ prepare()
-comment5.text=\r\n\ \ \ \ public\ void\ changeTurn(){\r\n\ \ \ \ if\ (turn\ \=\=\ 0)\r\n\ \ \ \ {\r\n\ \ \ \ addObject(zero,\ 10,\ 10\ );\ //\ add\ the\ turn\ zero\ object\ to\ the\ stage,\ the\ position\ does\ not\ matter\r\n\r\n\ \ \ \ //\ SomethingObject0.turnZeroEnds()\ gives\ me\ a\ boolean\ created\ in\ the\ SomethingObject0\ class\ \r\n\ \ \ \ //\ if\ the\ boolean\ \=\ true,\ it\ means\ that\ the\ class\ has\ done\ all\ its\ work\ and\ the\ turn\ ends\r\n\ \ \ \ if\ (SomethingObject0.turnZeroEnds()\ \=\=\ true)\ \r\n\ \ \ \ {\r\n\ \ \ \ removeObject(zero);\ //\ removes\ the\ object\ \r\n\ \ \ \ turn\ \=\ 1;\ //\ this\ turn\ ends\ and\ will\ go\ to\ the\ next\ turn\ in\ the\ next\ act\r\n\ \ \ \ }\r\n\ \ \ \ }\r\n\ \ \ \ else\ if\ (turn\ \=\=\ 1)\r\n\ \ \ \ {\r\n\ \ \ \ addObject(one,\ 10,\ 10\ );\ \r\n\ \ \ \ if\ (SomethingObject1.turnOneEnds()\ \=\=\ true)\ \r\n\ \ \ \ {\r\n\ \ \ \ removeObject(one);\ //\ removes\ the\ object\ \r\n\ \ \ \ turn\ \=\ 2;\ //\ this\ turn\ ends\ and\ will\ go\ to\ the\ next\ turn\ in\ the\ next\ act\r\n\ \ \ \ }\r\n\ \ \ \ }\r\n\ \ \ \ else\ if\ (turn\ \=\=\ 2)\r\n\ \ \ \ {\r\n\ \ \ \ addObject(two,\ 10,\ 10\ );\ \r\n\ \ \ \ if\ (SomethingObject2.turnTwoEnds()\ \=\=\ true)\ \r\n\ \ \ \ {\r\n\ \ \ \ removeObject(two);\ //\ removes\ the\ object\ \r\n\ \ \ \ turn\ \=\ 3;\ //\ this\ turn\ ends\ and\ will\ go\ to\ the\ next\ turn\ in\ the\ next\ act\r\n\ \ \ \ }\r\n\ \ \ \ }\r\n\ \ \ \ else\ if\ (turn\ \=\=\ 3)\r\n\ \ \ \ {\r\n\ \ \ \ addObject(three,\ 10,\ 10\ );\ \r\n\ \ \ \ if\ (SomethingObject3.turnThreeEnds()\ \=\=\ true)\ \r\n\ \ \ \ {\r\n\ \ \ \ removeObject(three);\ //\ removes\ the\ object\ \r\n\ \ \ \ turn\ \=\ 0;\ //\ goes\ back\ to\ turn\ zero\r\n\ \ \ \ }\r\n\ \ \ \ }\r\n\ \ \ \ //else\ {}\ not\ sure\ how\ the\ game\ ends,\ should\ be\ something\ related\ to\ the\ health\ bar\r\n\ \ \ \ }\r\n\r\n\ \ \ \ /**\r\n\ Prepare\ the\ world\ for\ the\ start\ of\ the\ program.\ That\ is\:\ create\ the\ initial\r\n\ objects\ and\ add\ them\ to\ the\ world.\r\n
+comment3.target=int\ getTurn()
+comment4.params=
+comment4.target=void\ nextTurn()
+comment5.params=turn
+comment5.target=void\ nextTurn(int)
 comment6.params=
-comment6.target=void\ updateHealth()
-numComments=7
+comment6.target=void\ makeWordObjects()
+comment7.params=
+comment7.target=void\ prepare()
+comment7.text=\n\ Prepare\ the\ world\ for\ the\ start\ of\ the\ program.\ That\ is\:\ create\ the\ initial\n\ objects\ and\ add\ them\ to\ the\ world.\n
+comment8.params=
+comment8.target=Character\ getPlayer()
+comment9.params=
+comment9.target=Character\ getEnemy()
+numComments=10

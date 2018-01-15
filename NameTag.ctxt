@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=NameTag
+comment0.text=\n\ This\ class\ creates\ a\ name\ tag\ unique\ to\ a\ character.\ It\n\ uses\ a\ ready\ image\ of\ the\ base\ tag\ with\ their\ name\ included,\n\ and\ places\ their\ unique\ HP\ on\ the\ tag,\ represented\ numerically\n\ and\ visually\ through\ a\ health\ bar\ that\ is\ framed\ by\ a\ provided\n\ health\ bar\ frame\ image\ (for\ a\ nicer\ look).\n\ \n\ @author\ Alex,\ Kathy,\ Alina\ \n\ @version\ November\ 9th,\ 2017\n
+comment1.params=name\ health\ x\ y
+comment1.target=NameTag(java.lang.String,\ int,\ int,\ int)
+comment2.params=
+comment2.target=void\ act()
+comment3.params=health
+comment3.target=void\ setHealth(int)
+comment4.params=
+comment4.target=int\ getX()
+comment5.params=
+comment5.target=int\ getY()
+numComments=6

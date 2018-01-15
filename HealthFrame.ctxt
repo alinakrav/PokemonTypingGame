@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=HealthFrame
+comment0.text=\n\ This\ class\ is\ used\ to\ display\ a\ frame\ that\ can\ be\ placed\ over\ a\ health\ bar.\n\ It\ makes\ the\ health\ bar\ more\ integrated\ into\ the\ look\ of\ the\ game.\n\ \n\ @author\ Alex,\ Kathy,\ Alina\ \n\ @version\ November\ 9th,\ 2017\n
+comment1.params=
+comment1.target=HealthFrame()
+numComments=2

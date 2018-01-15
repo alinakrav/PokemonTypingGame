@@ -1,13 +1,12 @@
 #BlueJ class context
-comment0.params=health
-comment0.target=HealthCounter(int)
-comment1.params=
-comment1.target=void\ act()
-comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ XP\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+comment0.target=HealthCounter
+comment0.text=\n\ This\ class\ is\ used\ to\ create\ the\ "HP\:\ __"\ portion\ of\ the\ character\ name\ tag,\ which\ \n\ displays\ their\ health\ numerically.\ It\ updates\ as\ the\ health\ variable\ changes.\n\ \n\ @author\ Alex,\ Kathy,\ Alina\ \n\ @version\ November\ 9th,\ 2017\n
+comment1.params=health
+comment1.target=HealthCounter(int)
 comment2.params=
-comment2.target=void\ update()
-comment3.params=health
-comment3.target=void\ lowerHealth(int)
+comment2.target=void\ act()
+comment3.params=
+comment3.target=void\ updateHealthCounter()
 comment4.params=health
 comment4.target=void\ setHealth(int)
 numComments=5

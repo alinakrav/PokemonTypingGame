@@ -1,57 +1,46 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 import java.awt.Color;
+
 /**
- * Write a description of class XP here.
+ * This class creates a rectangle representing the percentage of health left in a 
+ * character. It updates according to the stored health variable in its instances.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Alex, Kathy, Alina 
+ * @version November 9th, 2017
  */
 public class HealthBar extends Actor
 {
-    int health;
-    int healthBarWidth = 160;
-    int healthBarHeight = 15;
-    int pixelsPerHealthPoint;
-    
-    //https://youtu.be/oJHP18bhLT0
+    double health; // total health available in health bar
+    double healthBarWidth = 137;
+    int healthBarHeight = 12;
+    double pixelsPerHealthPoint; // amount of pixels in the health bar per hp
+
+    // constructor initialises the full health that's passed to it and determines how many pixels it occupies
     public HealthBar(int health){
         this.health = health;
-        pixelsPerHealthPoint = (int)healthBarWidth / health;
+        pixelsPerHealthPoint = healthBarWidth / health;
     }
-    /**
-     * Act - do whatever the XP wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
+
     public void act() 
     {
-
         update();
-        
-        /*if(health <= 0){
-            World world = getWorld();
-            world.removeObjects(world.getObjects(null)); //removes all the objects in the world;
-        }**/
-        
     }
+
+    // this method redraws the image of the health bar as health decreases
     public void update(){
-        setImage(new GreenfootImage(healthBarWidth + 2, healthBarHeight + 2));
+        setImage(new GreenfootImage((int)healthBarWidth, healthBarHeight));
         GreenfootImage myImage = getImage();
-        myImage.setColor(Color.WHITE);
-        myImage.drawRect(0, 0, healthBarWidth+1, healthBarHeight + 1);
-        myImage.setColor(Color.RED);
-        myImage.fillRect(1, 1, health * pixelsPerHealthPoint, healthBarHeight);
+        myImage.setColor(Color.GREEN);
+        myImage.fillRect(1, 1, (int)(health * pixelsPerHealthPoint), healthBarHeight);
     }
-    public void lowerHealth(){
-        health--;
-    }
-    public void lowerHealth(int health){ //lose health by a set int value
-        this.health-=health;
-    }
-    public void setHealthAndHealthBarWidth(int health, int width){ //set new health
+
+    // this method sets the health of the health bar 
+    public void setHealth(int health){
         this.health = health;
-        healthBarWidth = width;
     }
+
+    // this method gets the health of the health bar 
     public int getHealth(){
-        return health;
+        return (int)health;
     }
 }

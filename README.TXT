@@ -1,12 +1,26 @@
 ------------------------------------------------------------------------
-This is the project README file. Here, you should describe your project.
-Tell the reader (someone who does not know anything about this project)
-all he/she needs to know. The comments should usually include at least:
+This is the README file for Pokemon Keyboard Battle game
 ------------------------------------------------------------------------
 
-PROJECT TITLE:
-PURPOSE OF PROJECT:
-VERSION or DATE:
-HOW TO START THIS PROJECT:
-AUTHORS:
-USER INSTRUCTIONS:
+Project title:
+Pokemon Keyboard Battle Game
+
+Project due date:
+Nov 8th, 2017
+
+Authors: Alex Do, Alina Kravchenko, Kathy Zhuang
+
+Data structures used in this project and where to find them: 
+1. ArrayList (in the WordGenerator class)
+2. HashMap (in the WordObjects class)
+
+Component of this project you are planning to re-use in your final project and where to find it:
+1. Health bar (HealthFrame, HealthCounter and HealthBar class)
+2. Level buttons (Button class and PlayButton subclass) 
+3. Name tags (NameTag class)
+4. Characters (SubPlayer, SubEnemy, and Character class)
+5. Word generator and user input reader (WordBox, WordGenerator, InputReader and WordObjects)
+6. Attack (Attack and AttackOne class)
+7. World, introduction and end (Stages, End and Intro class)
+
+(We are planning to build our final project based on this project)

@@ -1,54 +1,29 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class attackOne here.
+ * This subclass creates an object with the functionality of the Attack class, that
+ * has a unique speed and set of frames to animate through. It is a moving
+ * projectile that can hit characters with a given amount of damage.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Alex, Kathy, Alina 
+ * @version November 9th, 2017
  */
-public class attackOne extends Attack
+public class AttackOne extends Attack
 {
-    private GreenfootImage[] frames = {
-        new GreenfootImage("attackOne1.png"), 
-        new GreenfootImage("attackOne2.png"),
-        new GreenfootImage("attackOne3.png"),
-        new GreenfootImage("attackOne4.png"),
-        new GreenfootImage("attackOne5.png"),
-        new GreenfootImage("attackOne6.png"),
-        new GreenfootImage("attackOne7.png"),
-        new GreenfootImage("attackOne8.png"),
-        new GreenfootImage("attackOne9.png"),
-        new GreenfootImage("attackOne10.png"),
-        new GreenfootImage("attackOne11.png"),
-        new GreenfootImage("attackOne8.png"),
-        new GreenfootImage("attackOne9.png"),
-        new GreenfootImage("attackOne10.png"),
-    };
-    private int frame = 0;
-    private static int speed = 10;
-    private static int damage = 10;
-    private static boolean enemy = false;
-    private final int loopPoint = 7;
-    public attackOne(){
-        super(speed, damage, enemy);
+    static int numFrames = 10; // number of frames in animation
+    private GreenfootImage[] frames = new GreenfootImage[numFrames]; // array of frames
+
+    private static int speed = 13; // specific speed of attack type
+    //private static int damage; // initial damage dealt by attack
+
+    // constructor calls superconstructor and passes arguments related to the subclass
+    public AttackOne(boolean canHit, Character attacker, int damage, int targetX, int targetY) { 
+        super(canHit, speed, damage, attacker, targetX, targetY, numFrames);
     }
 
-    /**
-     * Act - do whatever the attackOne wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
     public void act() 
     {
-        // Add your action code here.
-        super.act();
-        animate();
+        super.act(); // call act method of superclass
     }
 
-    public void animate(){
-        if(frame == frames.length){
-            frame=loopPoint;
-        }
-        setImage(frames[frame]);
-        frame++;
-    }
 }
