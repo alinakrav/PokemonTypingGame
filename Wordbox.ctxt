@@ -1,6 +1,0 @@
-#BlueJ class context
-comment0.target=Wordbox
-comment0.text=\ \n\ This\ class\ is\ used\ to\ display\ text,\ and\ specifically\ for\ this\ task,\ user\ input.\n\ \n\ @author\ Alex,\ Kathy,\ Alina\ \n\ @version\ November\ 9th,\ 2017\n
-comment1.params=s
-comment1.target=Wordbox(java.lang.String)
-numComments=2
